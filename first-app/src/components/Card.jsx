@@ -1,13 +1,19 @@
-import React from 'react'
 import './Card.css'
 
-const Card = (props) => {
+const Card = ({ title, description, image }) => {
   return (
-    <div className="card">
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
-
-    </div>
+    <article className="card">
+      <div
+        className="card__media"
+        style={{ backgroundImage: `url(${image})` }}
+        role="img"
+        aria-label={title}
+      />
+      <div className="card__body">
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
+    </article>
   )
 }
 

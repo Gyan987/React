@@ -1,19 +1,32 @@
 .navbar {
-    background-color: red;
-    padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #b91c1c;
+  padding: 14px 28px;
+}
+
+.navbar__brand {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.02em;
 }
 
 .navbar__links {
-    display: flex;
-    gap: 24px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  gap: 8px;
+  list-style: none;
 }
 
-.navbar__links li {
-    padding: 8px 16px;
-    gap: 24px;
-    color: white;
-    font-weight: 600;
+.navbar__links a {
+  display: block;
+  padding: 8px 14px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.navbar__links a:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
